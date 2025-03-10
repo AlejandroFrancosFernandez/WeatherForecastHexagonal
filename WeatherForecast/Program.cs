@@ -1,10 +1,11 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using WeatherForecast.Application.AccessLog.UseCases;
-using WeatherForecast.Application.Member.UseCases;
+using WeatherForecast.Application.AccessLogs.UseCases;
+using WeatherForecast.Application.Members.UseCases;
 using WeatherForecast.Domain.Ports;
+using WeatherForecast.Infrastructure.Persistence.AccessLogs.Repository;
 using WeatherForecast.Infrastructure.Persistence.DBConexion;
-using WeatherForecast.Infrastructure.Services;
+using WeatherForecast.Infrastructure.Persistence.Members.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
